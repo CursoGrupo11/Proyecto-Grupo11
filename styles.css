@@ -61,7 +61,7 @@ nav ul a {
     text-transform: uppercase;
     font-size: 15px;
     display: block;
-    
+    text-decoration: none;
 }  
  /*Animacion  NAV*/
 nav ul a:not(.btn)::after{
