@@ -14,46 +14,46 @@
  }
       
 
-    /* imagen de fondo del Header */
+/* imagen de fondo del Header */
 header {
-        background-image: url(https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true);
-        background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-        background-position: center; /* Centraliza a imagem dentro do elemento */
-        background-attachment: fixed;
-        filter: brightness(130%);
-        height: 700px;
- }
+    background-image: url(https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-position: center; /* Centraliza la imagen dentro del elemento */
+    background-attachment: fixed;
+    filter: brightness(130%);
+    height: 700px;
+}
 
 /* DIV que encorpora NAV */
- .container {
+.container {
     max-width: 1400px;
     margin: 0 auto;
-    padding:  5%;  
- }
+    padding: 5%;
+}
 
 /* config. LOGO MODIFIQUE ESTO*/ 
- .logo11 {
+.logo11 {
     position: fixed; 
     top: 50px;   
-    left: 30PX;
-    /*margin: auto;*/
+    left: 30px;
     width: 70px;
     height: auto;
     border-radius: 50px;
-  }
+}
+
 /* Config. del NAV */
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 0px;
-    }
+}
 
 nav ul {
     display: flex;
     align-items: center;
     list-style: none;
-    }
+}
 
 nav ul a {
     color: white;
@@ -62,9 +62,10 @@ nav ul a {
     font-size: 15px;
     display: block;
     text-decoration: none;
-}  
- /*Animacion  NAV*/
-nav ul a:not(.btn)::after{
+}
+
+/*Animacion  NAV*/
+nav ul a:not(.btn)::after {
     content: "";
     background-color: aliceblue;
     height: 3px;
@@ -72,61 +73,63 @@ nav ul a:not(.btn)::after{
     display: block;
     margin: 0 auto;
     transition: 0.3s;
-    }
+}
 
-nav ul a:hover::after{
-        width: 100%;
-    }
-    .btn.animate-btn{
-        animation:animate-outline 1s ease-out infinite
+nav ul a:hover::after {
+    width: 100%;
+}
 
-    }
-    .btn:hover{
-        background-color: #0c5ba6;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    @keyframes animate-outline{
-        from{
-            outline: 0px solid #226cb2;
-        }
-        to{
-            outline: 10px solid #186ebf;
-        }
-    }
+.btn.animate-btn {
+    animation: animate-outline 1s ease-out infinite
+}
 
- section {
+.btn:hover {
+    background-color: #0c5ba6;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #226cb2;
+    }
+    to {
+        outline: 10px solid #186ebf;
+    }
+}
+
+section {
     padding: 54px 0;
     color: #ffffff;
     margin: auto;
- }
- h1{
+}
+
+h1 {
     font-size: 30px;
     color: #ffffff;
     text-align: center;
- }
+}
 
- .titulo-centralizado{
+.titulo-centralizado {
     font-size: 25px;
     color: #ffffff;
     text-align: center;
- }
- p {
+}
+
+p {
     color: white;
     text-align: center; 
- }
- 
- .ventajas{
-    
+}
+
+.ventajas {
     color: #ffffff;
- }
- .items{
-    
+}
+
+.items {
     color: #ffffff;
- }
- 
+}
+
 /*Config. BOTON*/
- .btn {
+.btn {
     background-color: #0c5ba6;
     color: white;
     padding: 15px 20px;
@@ -134,18 +137,19 @@ nav ul a:hover::after{
     cursor: pointer;
     display: inline-block;
     transition: 0.2s;
- }
- 
+}
+
 /*Config. BOTON*/
- .banner{
-display: flex;
-justify-content: flex-end;  
- } 
- .banner .banner-text {
- margin: 25px;
- text-align: center;
- padding: 0 90px; 
- }
+.banner {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.banner .banner-text {
+    margin: 25px;
+    text-align: center;
+    padding: 0 90px; 
+}
 
 /*Config. H1*/
 .banner .banner-text h1 {
@@ -154,7 +158,7 @@ justify-content: flex-end;
     font-weight: 900;
     color: white;        
 }
-/* Otras propriedades del estilo necesárias para el H1 */
+
 /*Config. párrafo*/
 .banner .banner-text p {
     font-size: 25px;
@@ -163,19 +167,95 @@ justify-content: flex-end;
     font-weight: 400;
     margin: 25px 0;    
 }
-/* Otras propriedades del estilo necesárias para el  párrafo */ /*Agregue esta caja*/
+
 /*Caja transparente-baner-text*/
 .caja-banner-text {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     width: auto;
     position: absolute;
     top: 20%;
-    left:10%;
+    left: 10%;
     right: 10%;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     border-radius: 30px;
- }
+}
+
+/* Media Queries para Responsividad */
+
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        height: 500px;
+    }
+    
+    .logo11 {
+        width: 50px;
+        top: 20px;
+        left: 20px;
+    }
+    
+    nav ul a {
+        margin: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .banner .banner-text h1 {
+        font-size: 50px;
+    }
+    
+    .banner .banner-text p {
+        font-size: 20px;
+    }
+    
+    .caja-banner-text {
+        padding: 20px;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 576px) {
+    header {
+        height: 300px;
+    }
+    
+    .logo11 {
+        width: 40px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul a {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    
+    .banner .banner-text {
+        padding: 0 20px;
+        margin: 10px;
+    }
+    
+    .banner .banner-text h1 {
+        font-size: 30px;
+    }
+    
+    .banner .banner-text p {
+        font-size: 16px;
+    }
+    
+    .caja-banner-text {
+        padding: 15px;
+        top: 10%;
+        left: 5%;
+        right: 5%;
+    }
+}
+
 
 .description .explain {
     background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/7.png?raw=true');
