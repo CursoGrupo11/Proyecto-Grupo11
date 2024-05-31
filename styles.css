@@ -236,8 +236,10 @@ p {
     }
     
     .banner .banner-text {
-        padding: 0 20px;
-        margin: 10px;
+        width: 250px;
+        padding: 0; /* Reduzir o padding para ocupar menos espaço horizontal */
+        margin: 1px; /* Reduzir a margem para posicionamento mais à esquerda */
+        font-size: 1px; /* Reduzir o tamanho da fonte */
     }
     
     .banner .banner-text h1 {
@@ -317,6 +319,8 @@ aside {
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */ 
 } 
+
+
  
 .sociales{ 
 width: 25px;
@@ -331,6 +335,25 @@ list-style: none;
 display: inline-flex;
 border-radius: 60%;
 } 
+@media (max-width: 992px) {
+    .sociales {
+        width: 20px;
+        max-width: 80px;
+        max-height: 25px;
+        margin: 5px;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 576px) {
+    .sociales {
+        width: 15px;
+        max-width: 60px;
+        max-height: 20px;
+        margin: 3px;
+    }
+}
+
 .contactos li {
     display: inline-block;
     margin-right: 0px;
@@ -420,23 +443,23 @@ strong {
     --s: 40px;
     height: calc(var(--s)*0.9);
     width: calc(var(--s)*5);
-   --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
-   --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
-   -webkit-mask:
+    --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+    --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+    -webkit-mask:
      conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
      conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
      conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
      conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
-   -webkit-mask-size: var(--s) var(--s);
-   -webkit-mask-composite: xor,destination-over;
-           mask-composite: exclude,add;
-   -webkit-mask-repeat:repeat-x;
-   background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
-   animation: l20 2s infinite linear;
- }
- @keyframes l20 {
-     90%,100% {background-size:100% 100%}
- }
+    -webkit-mask-size: var(--s) var(--s);
+    -webkit-mask-composite: xor,destination-over;
+            mask-composite: exclude,add;
+    -webkit-mask-repeat:repeat-x;
+    background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
+    animation: l20 2s infinite linear;
+}
+@keyframes l20 {
+    90%,100% {background-size:100% 100%}
+}
 
 #navdown {
     margin-bottom: 10px;
@@ -454,9 +477,9 @@ strong {
 }
 
 .contactos img {
-    width: 30px; /* Ajusta o tamanho conforme tus necesidades */
-    height: 30px; /* Ajusta o tamanho conforme suas necessidades */
-    border-radius: 50%; /* Para hacer os íconos de redes sociales redondos */
+    width: 30px; /* Ajusta el tamaño según tus necesidades */
+    height: 30px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* Para hacer los íconos de redes sociales redondos */
 }
 
 .contactos a {
@@ -473,6 +496,33 @@ strong {
     text-align: center;
     font-size: 14px;
 }
+
+/* Media Queries para Responsividad */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .contactos img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 576px) {
+    .contactos img {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .contactos li {
+        margin-right: 5px;
+    }
+}
+
 /* Media Queries para Tablets */
 @media (max-width: 768px) {
     header {
