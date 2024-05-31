@@ -101,15 +101,15 @@ button {
     }
 
     .caja-curso h2 {
-        font-size: 18px; /* Ajustar o tamanho da fonte */
+        font-size: 15px; /* Ajustar o tamanho da fonte */
     }
 
     .caja-curso p {
-        font-size: 14px; /* Ajustar o tamanho da fonte */
+        font-size: 11px; /* Ajustar o tamanho da fonte */
     }
 
     .caja-curso a {
-        font-size: 12px; /* Ajustar o tamanho da fonte */
+        font-size: 10px; /* Ajustar o tamanho da fonte */
     }
 
     nav ul {
