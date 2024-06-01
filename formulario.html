@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Grupo 11 Python"/><meta name="copyright" content="Grupo 11 Python"/>
+        <meta name="description" content="Grupo 11: Tu destino para cursos de tecnología de la información. Explora nuestras opciones de aprendizaje en programación, desarrollo web, seguridad informática y más. Únete a nosotros y haz del aprendizaje de TI una experiencia emocionante y gratificante.">
+        <meta name="keywords" content="Grupo 11, cursos de tecnología, tecnología de la información, programación, desarrollo web, seguridad informática, análisis de datos, aprendizaje en línea">
+        <meta name="locality" content="Buenos Aires">
+        <meta name="region" content="CABA">
+        <meta name="country-name" content="Argentina">
+    <title>Formulario Grupo 11</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/Logo11.png?raw=true">
+</head>
+<body>
+   <div class="login-container">
+            <form id="login-form">
+                <h2>Iniciar Sesión</h2>
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Guardar contraseña</label>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+                <p>¿No tienes una cuenta? <a href="#" id="register-link">Registrarse</a></p>
+            </form>
+            <form id="register-form" class="hidden">
+                <h2>Registrarse</h2>
+                <div class="input-group">
+                    <label for="new-username">Usuario</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-password">Contraseña</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <button type="submit">Registrarse</button>
+                <p>¿Ya tienes una cuenta? <a href="#" id="login-link">Iniciar Sesión</a></p>
+            </form>
+    <!--Inicio del Footer-->
+            <footer id="footer"> 
+                <nav class="navbar">
+                    <h2>Contactos:</h2><div class="star"></div>
+                    <div class="contactos">
+                        <ul>
+                            <li><a href="#" rel="https://github.com/CursoGrupo11" target="_blank"><img src="https://github.com/LarissaAngel/Proyecto-Front-End/blob/main/img.lari/github-logo.png?raw=true" alt="GitHub"></a></li>
+                            <li><a href="#" rel="#" target="_blank"><img src="https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/whatsapp.png?raw=true" alt="whatsapp"></a></li>
+                            <li><a href="mensaje.html" rel="#" target="_blank"><img src="https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/google.png?raw=true" alt="google"></a></li>
+                            <li><a href="#" rel="https://www.linkedin.com/in/robson-ramos-bernardes-06a96570/" target="_blank"><img src="https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/linkedin.png?raw=true" alt="linkedin"></a></li>
+                       </ul>
+                    </div>
+                </nav>
+                <p class="copyright">© 2024 Grupo 11, todos los derechos reservados.</p>
+            </footer>
+            <!--Inicio del Footer--> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
