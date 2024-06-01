@@ -1,42 +1,40 @@
-//Formulario grupo 11
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const rememberMe = document.getElementById('rememberMe').checked;
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const registerLink = document.getElementById('register-link');
+    const loginLink = document.getElementById('login-link');
 
-    // Simulación de autenticación (aquí puedes agregar lógica de autenticación real)
-    if (email === 'grupo11@teste.com' && password === 'grupo11') {
-        document.getElementById('message').style.color = 'green';
-        document.getElementById('message').innerText = `Login exitoso, ¡Bienvenido ${username}!`;
-        if (rememberMe) {
-            localStorage.setItem('username', username);
-            localStorage.setItem('email', email);
-            localStorage.setItem('password', password);
-        } else {
-            localStorage.removeItem('username');
-            localStorage.removeItem('email');
-            localStorage.removeItem('password');
-        }
-    } else {
-        document.getElementById('message').style.color = 'red';
-        document.getElementById('message').innerText = '¡Correo o contraseña incorrectos!';
-    }
+    registerLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        loginForm.classList.add('hidden');
+        registerForm.classList.remove('hidden');
+    });
+
+    loginLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        registerForm.classList.add('hidden');
+        loginForm.classList.remove('hidden');
+    });
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const remember = document.getElementById('remember').checked;
+
+        // Aqui você pode adicionar a lógica para enviar os dados do login ao servidor
+
+        alert(`Usuario: ${username}\nContraseña: ${password}\nGuardar contraseña: ${remember}`);
+    });
+
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const newUsername = document.getElementById('new-username').value;
+        const newPassword = document.getElementById('new-password').value;
+
+        // Aqui você pode adicionar a lógica para enviar os dados do registro ao servidor
+
+        alert(`Nuevo Usuario: ${newUsername}\nNueva Contraseña: ${newPassword}`);
+    });
 });
-
-// Complete previamente el formulario si el usuario elige recordar la contraseña
-window.onload = function() {
-    const savedUsername = localStorage.getItem('username');
-    const savedEmail = localStorage.getItem('email');
-    const savedPassword = localStorage.getItem('password');
-
-    if (savedUsername && savedEmail && savedPassword) {
-        document.getElementById('username').value = savedUsername;
-        document.getElementById('email').value = savedEmail;
-        document.getElementById('password').value = savedPassword;
-        document.getElementById('rememberMe').checked = true;
-    }
-}
-
