@@ -16,7 +16,7 @@
 
     /* imagen de fondo del Header */
 header {
-        background-image: url('img.grupo11/ab.jpg');
+        background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true');
         background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
         background-position: center; /* Centraliza a imagem dentro do elemento */
         background-attachment: fixed;
@@ -178,7 +178,7 @@ justify-content: flex-end;
  }
 
 .description .explain {
-    background-image: url('img.grupo11/7.png');
+    background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/7.png?raw=true');
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin:3px;
@@ -250,7 +250,7 @@ justify-content: flex-end;
 
 /*CAROUSEL*/
 .second-section{
-    background-image: url('img.grupo11/ab.jpg');
+    background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true');
     background-size: auto; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem dentro do elemento */
     background-attachment: fixed;
@@ -401,8 +401,8 @@ strong {
 .logo{
     width: 50px;
     height: auto;
-    max-width: 512px;
-    max-height: 512px;
+    max-width: 500px;
+    max-height: 500px;
     margin: 0 auto;
     border-radius: 50px;
 }
@@ -448,7 +448,28 @@ strong {
     color: #ffffff;
     margin: 20px;
 }
-
+/*BOOTSTRAP*/
+.star {
+    --s: 40px;
+    height: calc(var(--s)*0.9);
+    width: calc(var(--s)*5);
+   --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+   --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+   -webkit-mask:
+     conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+     conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+     conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+     conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+   -webkit-mask-size: var(--s) var(--s);
+   -webkit-mask-composite: xor,destination-over;
+           mask-composite: exclude,add;
+   -webkit-mask-repeat:repeat-x;
+   background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
+   animation: l20 2s infinite linear;
+ }
+ @keyframes l20 {
+     90%,100% {background-size:100% 100%}
+ }
 
 
 
