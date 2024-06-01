@@ -231,30 +231,31 @@ p {
     }
     
     nav ul a {
-        margin: 5px 0;
+        width:auto;
+        margin: 5px;
         font-size: 12px;
     }
     
     .banner .banner-text {
         width: 250px;
-        padding: 0; /* Reduzir o padding para ocupar menos espaço horizontal */
+        padding: 0; /* Reduzir o padding para ocupar menos espaço horizontal justify-content: flex-start; */
         margin: 1px; /* Reduzir a margem para posicionamento mais à esquerda */
         font-size: 1px; /* Reduzir o tamanho da fonte */
     }
     
     .banner .banner-text h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .banner .banner-text p {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .caja-banner-text {
         padding: 15px;
-        top: 10%;
+        top: 12%;
         left: 5%;
-        right: 5%;
+        right: -5%;
     }
 }
 
@@ -379,7 +380,7 @@ strong {
     background-color: rgba(255, 255, 255, 0.7); /* Color de fondo translúcido */
     padding: 10px;
     border-radius: 5px;
-  position: absolute;
+    position: absolute;
 }
     
 .options{ /*  texto carrusel*/
@@ -400,7 +401,7 @@ strong {
     
     ul { 
         list-style-type: disc; 
-        margin: 30px; 
+        margin: 200px; 
         padding: 30px; 
         display: inline-block;
         align-items: center;
@@ -519,7 +520,7 @@ strong {
     }
     
     .contactos li {
-        margin-right: 5px;
+            margin-right: 5px;
     }
 }
 
@@ -530,11 +531,12 @@ strong {
     }
 
     .banner .banner-text h1 {
-        font-size: 60px;
+        font-size: 30px;
+        line-height: normal;
     }
 
     .banner .banner-text p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #carouselExampleCaptions {
