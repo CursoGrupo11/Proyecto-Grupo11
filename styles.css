@@ -14,46 +14,46 @@
  }
       
 
-/* imagen de fondo del Header */
+    /* imagen de fondo del Header */
 header {
-    background-image: url(https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
-    background-position: center; /* Centraliza la imagen dentro del elemento */
-    background-attachment: fixed;
-    filter: brightness(130%);
-    height: 700px;
-}
+        background-image: url('img.grupo11/ab.jpg');
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem dentro do elemento */
+        background-attachment: fixed;
+        filter: brightness(130%);
+        height: 700px;
+ }
 
 /* DIV que encorpora NAV */
-.container {
+ .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 5%;
-}
+    padding:  5%;  
+ }
 
 /* config. LOGO MODIFIQUE ESTO*/ 
-.logo11 {
+ .logo11 {
     position: fixed; 
     top: 50px;   
-    left: 30px;
+    left: 30PX;
+    /*margin: auto;*/
     width: 70px;
     height: auto;
     border-radius: 50px;
-}
-
+  }
 /* Config. del NAV */
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 0px;
-}
+    }
 
 nav ul {
     display: flex;
     align-items: center;
     list-style: none;
-}
+    }
 
 nav ul a {
     color: white;
@@ -61,11 +61,10 @@ nav ul a {
     text-transform: uppercase;
     font-size: 15px;
     display: block;
-    text-decoration: none;
-}
-
-/*Animacion  NAV*/
-nav ul a:not(.btn)::after {
+    
+}  
+ /*Animacion  NAV*/
+nav ul a:not(.btn)::after{
     content: "";
     background-color: aliceblue;
     height: 3px;
@@ -73,63 +72,61 @@ nav ul a:not(.btn)::after {
     display: block;
     margin: 0 auto;
     transition: 0.3s;
-}
-
-nav ul a:hover::after {
-    width: 100%;
-}
-
-.btn.animate-btn {
-    animation: animate-outline 1s ease-out infinite
-}
-
-.btn:hover {
-    background-color: #0c5ba6;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-@keyframes animate-outline {
-    from {
-        outline: 0px solid #226cb2;
     }
-    to {
-        outline: 10px solid #186ebf;
-    }
-}
 
-section {
+nav ul a:hover::after{
+        width: 100%;
+    }
+    .btn.animate-btn{
+        animation:animate-outline 1s ease-out infinite
+
+    }
+    .btn:hover{
+        background-color: #0c5ba6;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    @keyframes animate-outline{
+        from{
+            outline: 0px solid #226cb2;
+        }
+        to{
+            outline: 10px solid #186ebf;
+        }
+    }
+
+ section {
     padding: 54px 0;
     color: #ffffff;
     margin: auto;
-}
-
-h1 {
+ }
+ h1{
     font-size: 30px;
     color: #ffffff;
     text-align: center;
-}
+ }
 
-.titulo-centralizado {
+ .titulo-centralizado{
     font-size: 25px;
     color: #ffffff;
     text-align: center;
-}
-
-p {
+ }
+ p {
     color: white;
     text-align: center; 
-}
-
-.ventajas {
+ }
+ 
+ .ventajas{
+    
     color: #ffffff;
-}
-
-.items {
+ }
+ .items{
+    
     color: #ffffff;
-}
-
+ }
+ 
 /*Config. BOTON*/
-.btn {
+ .btn {
     background-color: #0c5ba6;
     color: white;
     padding: 15px 20px;
@@ -137,19 +134,18 @@ p {
     cursor: pointer;
     display: inline-block;
     transition: 0.2s;
-}
-
+ }
+ 
 /*Config. BOTON*/
-.banner {
-    display: flex;
-    justify-content: flex-end;  
-}
-
-.banner .banner-text {
-    margin: 25px;
-    text-align: center;
-    padding: 0 90px; 
-}
+ .banner{
+display: flex;
+justify-content: flex-end;  
+ } 
+ .banner .banner-text {
+ margin: 25px;
+ text-align: center;
+ padding: 0 90px; 
+ }
 
 /*Config. H1*/
 .banner .banner-text h1 {
@@ -158,7 +154,7 @@ p {
     font-weight: 900;
     color: white;        
 }
-
+/* Otras propriedades del estilo necesárias para el H1 */
 /*Config. párrafo*/
 .banner .banner-text p {
     font-size: 25px;
@@ -167,107 +163,22 @@ p {
     font-weight: 400;
     margin: 25px 0;    
 }
-
+/* Otras propriedades del estilo necesárias para el  párrafo */ /*Agregue esta caja*/
 /*Caja transparente-baner-text*/
 .caja-banner-text {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     width: auto;
     position: absolute;
     top: 20%;
-    left: 10%;
+    left:10%;
     right: 10%;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     border-radius: 30px;
-}
-
-/* Media Queries para Responsividad */
-
-/* Tablets */
-@media (max-width: 992px) {
-    header {
-        height: 500px;
-    }
-    
-    .logo11 {
-        width: 50px;
-        top: 20px;
-        left: 20px;
-    }
-    
-    nav ul a {
-        margin: 10px 15px;
-        font-size: 14px;
-    }
-    
-    .banner .banner-text h1 {
-        font-size: 50px;
-    }
-    
-    .banner .banner-text p {
-        font-size: 20px;
-    }
-    
-    .caja-banner-text {
-        padding: 20px;
-    }
-}
-
-/* Teléfonos */
-@media (max-width: 576px) {
-    header {
-        height: 300px;
-    }
-    
-    .logo11 {
-        width: 40px;
-        top: 10px;
-        left: 10px;
-    }
-    
-    nav ul {
-        width: 40px;
-        top: 10px;
-        left: 70px;
-        flex-direction:column;
-        align-items: flex-start;
-    }
-    
-    nav ul a {
-        width:auto;
-        margin: 5px;
-        font-size: 12px;
-        
-    }
-    
-    .banner .banner-text {
-        width: 250px;
-        padding: 0; /* Reduzir o padding para ocupar menos espaço horizontal justify-content: flex-start; */
-        margin: 1px; /* Reduzir a margem para posicionamento mais à esquerda */
-        font-size: 1px; /* Reduzir o tamanho da fonte */
-        flex-direction:column;
-        left: 5px;
-    }
-    
-    .banner .banner-text h1 {
-        font-size: 20px;
-    }
-    
-    .banner .banner-text p {
-        font-size: 15px;
-    }
-    
-    .caja-banner-text {
-        padding: 15px;
-        top: 12%;
-        left: 5%;
-        right: -5%;
-    }
-}
-
+ }
 
 .description .explain {
-    background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/7.png?raw=true');
+    background-image: url('img.grupo11/7.png');
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin:3px;
@@ -280,7 +191,7 @@ p {
 
 /*CAROUSEL*/
 .second-section{
-    background-image: url('https://github.com/R0bs0nRamos/Grupo11/blob/main/Grupo11_index.html/img.grupo11/ab.jpg?raw=true');
+    background-image: url('img.grupo11/ab.jpg');
     background-size: auto; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem dentro do elemento */
     background-attachment: fixed;
@@ -326,8 +237,6 @@ aside {
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */ 
 } 
-
-
  
 .sociales{ 
 width: 25px;
@@ -342,25 +251,6 @@ list-style: none;
 display: inline-flex;
 border-radius: 60%;
 } 
-@media (max-width: 992px) {
-    .sociales {
-        width: 20px;
-        max-width: 80px;
-        max-height: 25px;
-        margin: 5px;
-    }
-}
-
-/* Teléfonos */
-@media (max-width: 576px) {
-    .sociales {
-        width: 15px;
-        max-width: 60px;
-        max-height: 20px;
-        margin: 3px;
-    }
-}
-
 .contactos li {
     display: inline-block;
     margin-right: 0px;
@@ -386,7 +276,7 @@ strong {
     background-color: rgba(255, 255, 255, 0.7); /* Color de fondo translúcido */
     padding: 10px;
     border-radius: 5px;
-    position: absolute;
+  position: absolute;
 }
     
 .options{ /*  texto carrusel*/
@@ -407,7 +297,7 @@ strong {
     
     ul { 
         list-style-type: disc; 
-        margin: 200px; 
+        margin: 30px; 
         padding: 30px; 
         display: inline-block;
         align-items: center;
@@ -441,35 +331,26 @@ strong {
 
 /*FOOTER*/
 #footer {
+    text-align: center;
+    padding: 1.25rem 0 2rem;
+    font-size: .75rem;
     background: linear-gradient(to right, #000000, #3f3f46); /* Degradado de negro a azul */
     color: #fff;
-    padding: 10px;
+
 }
 
-.star {
-    --s: 40px;
-    height: calc(var(--s)*0.9);
-    width: calc(var(--s)*5);
-    --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
-    --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
-    -webkit-mask:
-     conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
-     conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
-     conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
-     conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
-    -webkit-mask-size: var(--s) var(--s);
-    -webkit-mask-composite: xor,destination-over;
-            mask-composite: exclude,add;
-    -webkit-mask-repeat:repeat-x;
-    background:linear-gradient(#ffb940 0 0) left/0% 100% #ddd no-repeat;
-    animation: l20 2s infinite linear;
-}
-@keyframes l20 {
-    90%,100% {background-size:100% 100%}
+.logo{
+    width: 50px;
+    height: auto;
+    max-width: 512px;
+    max-height: 512px;
+    margin: 0 auto;
+    border-radius: 50px;
 }
 
-#navdown {
+ #navdown {
     margin-bottom: 10px;
+    
 }
 
 .contactos ul {
@@ -481,18 +362,21 @@ strong {
 .contactos li {
     display: inline-block;
     margin-right: 10px;
+    
 }
 
 .contactos img {
     width: 30px; /* Ajusta el tamaño según tus necesidades */
     height: 30px; /* Ajusta el tamaño según tus necesidades */
-    border-radius: 50%; /* Para hacer los íconos de redes sociales redondos */
+    border-radius: 30%; /* Para hacer los íconos de redes sociales redondos */
 }
+
 
 .contactos a {
     display: block;
     text-decoration: none;
     color: #fff;
+    
 }
 
 .contactos a:hover {
@@ -502,32 +386,8 @@ strong {
 .copyright {
     text-align: center;
     font-size: 14px;
-}
-
-/* Media Queries para Responsividad */
-
-/* Tablets */
-@media (max-width: 992px) {
-    .contactos img {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .copyright {
-        font-size: 12px;
-    }
-}
-
-/* Teléfonos */
-@media (max-width: 576px) {
-    .contactos img {
-        width: 15px;
-        height: 15px;
-    }
-    
-    .contactos li {
-            margin-right: 5px;
-    }
+    color: #ffffff;
+    margin: 20px;
 }
 
 /* Media Queries para Tablets */
@@ -537,12 +397,11 @@ strong {
     }
 
     .banner .banner-text h1 {
-        font-size: 30px;
-        line-height: normal;
+        font-size: 60px;
     }
 
     .banner .banner-text p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #carouselExampleCaptions {
